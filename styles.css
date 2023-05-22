@@ -3,110 +3,122 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-/* Estilos para la barra de navegación */
-nav {
+  }
+  
+  /* Estilos para la barra de navegación */
+  nav {
     background-color: #89E1E7;
     font-size: 17px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10px;
     padding: 20px 0;
-}
-
-nav .row {
+  }
+  
+  nav .row {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     display: inline;
     margin-right: 10px;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     color: black;
     text-decoration: none;
-}
-
-.nav-brand{
-    margin-left: 0px;
+  }
+  
+  .nav-brand {
+    margin-left: 0;
     width: auto;
     height: 50px;
-}
-
-/* Estilos para el aside */
-aside {
+  }
+  
+  /* Estilos para el aside */
+  aside {
     background-color: #88EC86;
     color: black;
     padding: 10px;
     grid-column: 2 / 3;
-}
-
-aside h2 {
+  }
+  
+  aside h2 {
     font-size: 18px;
     margin-top: 0;
-}
-
-aside form {
+  }
+  
+  aside form {
     margin-bottom: 10px;
-}
-
-aside button {
+  }
+  
+  aside button {
     margin-bottom: 5px;
-}
-
-.clearfix {
-    clear: both;
-}
-
-.container {
+  }
+  
+  .container {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-gap: 20px;
-}
-
-.container-grid {
+  }
+  
+  .container-grid {
     grid-column: 1 / 2;
-}
-
-/* Estilos para el mapa */
-iframe {
+  }
+  
+  /* Estilos para el mapa */
+  iframe {
     width: 100%;
     height: 450px;
     border: 0;
-}
-.AboutUs {
+  }
+  
+  .AboutUs {
     margin-top: 20px;
-}
-
-.AboutUs h2 {
+  }
+  
+  .AboutUs h2 {
     margin-top: 0;
-}
-
-.Integrantes- {
+  }
+  
+  .Integrantes {
     margin-top: 20px;
-}
-
-.Integrantes- h2 {
+  }
+  
+  .Integrantes h2 {
     margin-top: 0;
-}
-
-.Integrantes- div {
+  }
+  
+  .Integrantes div {
     margin-bottom: 20px;
-}
-
-/*ajustar las imagenes*/
-img {
-    width: 100px;
-    height: 100px;
-}
+  }
+  
+  /* Ajustar las imágenes */
+  img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  .Cont2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .AboutUs {
+    grid-column: 1 / 2;
+  }
+  
+  .Integrantes {
+    padding: 10px;
+    grid-column: 2 / 3;
+  }
+  
