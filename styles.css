@@ -13,34 +13,32 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-  }
-  
-  nav .row {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
+    /* Transición para el color de fondo */
+    transition: background-color 0.3s ease;
   }
   
   nav ul li a {
     color: black;
     text-decoration: none;
+    /* Transición para el color de texto */
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: white;
   }
   
   .nav-brand {
     margin-left: 0;
     width: auto;
     height: 50px;
+    /* Transición para el tamaño */
+    transition: width 0.3s ease, height 0.3s ease;
+  }
+  
+  .nav-brand:hover {
+    width: 150px;
+    height: 70px;
   }
   
   /* Estilos para el aside */
@@ -49,6 +47,17 @@ body {
     color: black;
     padding: 10px;
     grid-column: 2 / 3;
+    /* Animación para la entrada */
+    animation: slideIn 0.5s ease;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
   
   aside h2 {
@@ -79,6 +88,12 @@ body {
     width: 100%;
     height: 450px;
     border: 0;
+    /* Transición para el tamaño */
+    transition: height 0.3s ease;
+  }
+  
+  iframe:hover {
+    height: 500px;
   }
   
   .AboutUs {
@@ -105,6 +120,13 @@ body {
   img {
     max-width: 100px;
     max-height: 100px;
+    /* Transición para el tamaño */
+    transition: max-width 0.3s ease, max-height 0.3s ease;
+  }
+  
+  img:hover {
+    max-width: 150px;
+    max-height: 150px;
   }
   
   .Cont2 {
