@@ -16,6 +16,23 @@ body {
     /* Transición para el color de fondo */
     transition: background-color 0.3s ease;
   }
+
+  nav .row {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
   
   nav ul li a {
     color: black;
@@ -30,17 +47,12 @@ body {
   
   .nav-brand {
     margin-left: 0;
-    width: auto;
+    width: 50px;
     height: 50px;
     /* Transición para el tamaño */
     transition: width 0.3s ease, height 0.3s ease;
   }
-  
-  .nav-brand:hover {
-    width: 150px;
-    height: 70px;
-  }
-  
+
   /* Estilos para el aside */
   aside {
     background-color: #88EC86;
