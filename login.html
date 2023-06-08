@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="login.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <section>
+    <div class="form-box">
+      <div class="fomr-value">
+        <form action="">
+          <h2>Iniciar sesión</h2>
+          <div class="inputbox">
+            <ion-icon name="mail-open-outline"></ion-icon>
+            <input type="Email" required>
+            <label for="">Email</label>
+          </div>
+          <div class="inputbox">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="password" required>
+            <label for="">Contraseña</label>
+          </div>
+          <div class="forget">
+            <label for=""><input type="checkbox">Recordar Contraseña <a href="#">Olvidaste tu contraseña?</a></label>
+          </div>
+          <button>Log in</button>
+          <div class="signin">
+            <p>No tengo una cuenta <a href="signin.html">Registrase</a></p>
+          </div>
+        </form>
+        <button onclick="window.location.href = 'index.html';">Volver al inicio</button>
+      </div>
+    </div>
+  </section>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

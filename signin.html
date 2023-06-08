@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="signin.css">
+  <title>Sign in</title>
+</head>
+
+<body>
+  <section>
+    <div class="form-box">
+      <div class="fomr-value">
+        <form action="">
+          <h2>Regístrese</h2>
+          <div class="inputbox">
+            <ion-icon name="person-outline"></ion-icon>
+            <input type="text" required>
+            <label for="">Nombre</label>
+          </div>
+          <div class="inputbox">
+            <ion-icon name="person-outline"></ion-icon>
+            <input type="text" required>
+            <label for="">Apellido</label>
+          </div>
+          <div class="inputbox">
+            <ion-icon name="mail-open-outline"></ion-icon>
+            <input type="email" required>
+            <label for="">Correo electrónico</label>
+          </div>
+          <div class="inputbox">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="password" required>
+            <label for="">Contraseña</label>
+          </div>
+          <div class="forget">
+            <label for=""><input type="checkbox">Recordar Contraseña <a href="#">Olvidaste tu contraseña?</a></label>
+          </div>
+          <button>Registrarse</button>
+          <div class="login">
+            <p>Ya tengo una cuenta <a href="login.html">Iniciar sesión</a></p>
+          </div>
+        </form>
+        <button class="index" onclick="window.location.href = 'index.html';">Volver al inicio</button>
+      </div>
+    </div>
+  </section>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

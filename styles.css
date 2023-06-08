@@ -1,158 +1,48 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Estilos para la barra de navegación */
-  nav {
-    background-color: #89E1E7;
-    font-size: 17px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    /* Transición para el color de fondo */
-    transition: background-color 0.3s ease;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  background: url(/imagenes/photo.jpg)no-repeat center center fixed;
+  background-size: cover;
+}
 
-  nav .row {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: black;
-    text-decoration: none;
-    /* Transición para el color de texto */
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: white;
-  }
-  
-  .nav-brand {
-    margin-left: 0;
-    width: 50px;
-    height: 50px;
-    /* Transición para el tamaño */
-    transition: width 0.3s ease, height 0.3s ease;
-  }
+/* Estilos para la barra de navegación */
+nav {
+font-size: 17px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+}
 
-  /* Estilos para el aside */
-  aside {
-    background-color: #88EC86;
-    color: black;
-    padding: 10px;
-    grid-column: 2 / 3;
-    /* Animación para la entrada */
-    animation: slideIn 0.5s ease;
-  }
-  
-  @keyframes slideIn {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-  
-  aside h2 {
-    font-size: 18px;
-    margin-top: 0;
-  }
-  
-  aside form {
-    margin-bottom: 10px;
-  }
-  
-  aside button {
-    margin-bottom: 5px;
-  }
-  
-  .container {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-gap: 20px;
-  }
-  
-  .container-grid {
-    grid-column: 1 / 2;
-  }
-  
-  /* Estilos para el mapa */
-  iframe {
-    width: 100%;
-    height: 450px;
-    border: 0;
-    /* Transición para el tamaño */
-    transition: height 0.3s ease;
-  }
-  
-  iframe:hover {
-    height: 500px;
-  }
-  
-  .AboutUs {
-    margin-top: 20px;
-  }
-  
-  .AboutUs h2 {
-    margin-top: 0;
-  }
-  
-  .Integrantes {
-    margin-top: 20px;
-  }
-  
-  .Integrantes h2 {
-    margin-top: 0;
-  }
-  
-  .Integrantes div {
-    margin-bottom: 20px;
-  }
-  
-  /* Ajustar las imágenes */
-  img {
-    max-width: 100px;
-    max-height: 100px;
-    /* Transición para el tamaño */
-    transition: max-width 0.3s ease, max-height 0.3s ease;
-  }
-  
-  img:hover {
-    max-width: 150px;
-    max-height: 150px;
-  }
-  
-  .Cont2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-  }
-  
-  .AboutUs {
-    grid-column: 1 / 2;
-  }
-  
-  .Integrantes {
-    padding: 10px;
-    grid-column: 2 / 3;
-  }
-  
+nav ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+nav ul li {
+display: inline;
+margin-left: 10px;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none;
+padding: 10px 20px;
+}
+
+nav ul li a:hover {
+color: white;
+}
+
+.nav-brand {
+margin-left: 0;
+width: 50px;
+height: 50px;
+/* Transición para el tamaño */
+transition: width 0.3s ease, height 0.3s ease;
+}
