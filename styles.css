@@ -16,6 +16,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 10px;
+width: 100%;
 }
 
 nav ul {
@@ -41,8 +42,23 @@ color: white;
 
 .nav-brand {
 margin-left: 0;
-width: 50px;
+width: auto;
 height: 50px;
 /* Transición para el tamaño */
 transition: width 0.3s ease, height 0.3s ease;
+}
+
+/*Integrantes*/
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  width: auto;
+  /*background-color: white;*/
+  border-radius: 10px;
+  overflow: hidden;
 }
