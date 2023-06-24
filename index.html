@@ -1,179 +1,211 @@
 <!DOCTYPE html>
 
-<html lang = "es">
+<html lang="es">
 
-    <head>
-        <meta charset = "utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1">
-        <title>GasYa!</title>
-        <link rel="stylesheet" href="styles.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-        rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
-        crossorigin="anonymous">
-        <script src="./scripts.js"></script>
-    </head>
-    <body>
-        <section>
-            <nav class="container-fluid">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GasYa!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="./scripts.js"></script>
+</head>
 
-                <img class="nav-brand"src="imagenes/logo.png" alt="Logo">
+<body>
+    <section>
+        <nav class="container-fluid">
+
+            <img class="nav-brand" src="imagenes/logo.png" alt="Logo">
+            <ul>
+                <li>
+                    <a href="index.html">GasYa!</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#AU">Nosotros</a>
+                </li>
+                <li>
+                    <a href="signin.html">Registrate</a>
+                </li>
+                <li>
+                    <a href="login.html">Iniciar sesión</a>
+                </li>
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+        <br><br>
+
+        <section class="row">
+            <div class="col-8">
+                <iframe class="container-fluid"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.622626821371!2d-77.0427486857368!3d-12.046573745029852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1
+                    s0x9105c8b6b6b6b6b6%3A0x4e9b6b6b6b6b6b6b!2sPlaza%20Vea!5e0!3m2!1ses-419!2spe!4v1624019178808!5m2!1ses-419!2spe" width="600"
+                    height="450" style="border:0;" allowfullsrceen="yes" loading="lazy"></iframe>
+            </div>
+            <div class="col-4">
+                <div>
+                    <h2 class="text-black">Selecciona el distrito donde se encuentra</h2>
+                    <form>
+                        <input type="text">
+                        <input type="submit" value="Buscar" />
+                    </form>
+                </div>
+                <div>
+                    <h3>Acerca del Combustible</h3>
+                    <p>Texto introductorio sobre el combustible.</p>
+                    <h4>Tipos de combustibles</h4>
                     <ul>
                         <li>
-                            <a href="index.html">GasYa!</a>
+                            <input type="checkbox" id="gasolina" name="combustible" value="gasolina">
+                            <label for="gasolina">Gasolina</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="diesel" name="combustible" value="diesel">
+                            <label for="diesel">Diesel</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="gas" name="combustible" value="gas">
+                            <label for="gas">Gas</label>
                         </li>
                     </ul>
-                    <ul>
-                        <li>
-                            <a href="signin.html">Registrate</a>
-                        </li>
-                        <li>
-                            <a href="login.html">Iniciar sesión</a>
-                        </li>
-                        <li>
-                            <a href="#">FAQ</a>
-                        </li>
-                    </ul>
-            </nav>
-            <br><br>
-
-            <section class = "row">
-                <div class= "col-8">
-                    <iframe class="container-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.622626821371!2d-77.0427486857368!3d-12.046573745029852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1
-                    s0x9105c8b6b6b6b6b6%3A0x4e9b6b6b6b6b6b6b!2sPlaza%20Vea!5e0!3m2!1ses-419!2spe!4v1624019178808!5m2!1ses-419!2spe"
-                    width="600" height="450" style="border:0;" allowfullsrceen="yes" loading="lazy"></iframe>
                 </div>
-                <div class="col-5">
-                    <div>
-                        <h2 class="text-black">Selecciona el distrito donde se encuentra</h2>
-                        <form>
-                            <input type="text">
-                            <input type="submit" value="Buscar"/>
-                        </form>
+            </div>
+        </section>
+
+        <br><br><br><br>
+        <section id="AU" class="container-AU">
+            <h2 id="AU">Acerca de nosotros</h2>
+            <div class="AboutUs">
+                <div class="row">
+                    <div class="col">
+                        <p class="text-white">
+                            Somos PetroPro, un grupo de estudiantes de ingeniería de la Universidad Peruana de Ciencias
+                            Aplicadas (UPC)
+                            que busca proporcionar, mediante el uso de la tecnología, una solución a dificultad que
+                            afrontan muchos usuarios
+                            al buscar una forma de abastecerse de combustible de forma accesible, refiriéndonos a dinero
+                            y distancia.
+                        </p>
                     </div>
-                    <div>
-                        <a href="#">Acerda del Combustible</a>
-                        <a href="#AU">Acerca de nosotros</a>
-                    </div>    
-                </div>
-            </section>
-
-            <br><br><br><br>
-            <section class = "container-fluid">
-                <h2 id="AU">Acerca de nosotros</h2>
-                <div class = "AboutUs">
-                    <div class="row">
-                        <div class="col">
-                            <p class="text-black">
-                                Somos PetroPro, un grupo de estudiantes de ingeniería de la Universidad Peruana de Ciencias Aplicadas (UPC) 
-                                que busca proporcionar, mediante el uso de la tecnología, una solución a dificultad que afrontan muchos usuarios 
-                                al buscar una forma de abastecerse de combustible de forma accesible, refiriéndonos a dinero y distancia.
-                            </p>
-                        </div>
-                        <div class="col">
-                            <h3>Misión</h3>
-                            <p class="text-black">
-                                Facilitarle al consumidor una herramienta que mejore la eficiencia y le ayude a ahorrar en su proceso de abastecimiento 
-                                de combustible.
-                            </p>
-                            <h3>Visión</h3>
-                            <p class="text-black"> 
-                                “Ser el aplicativo de ayuda respecto a estaciones de servicio, más recurrido del mercado peruano”
-                            </p>
-                        </div>
+                    <div class="col">
+                        <h3>Misión</h3>
+                        <p class="text-white">
+                            Facilitarle al consumidor una herramienta que mejore la eficiencia y le ayude a ahorrar en
+                            su proceso de abastecimiento
+                            de combustible.
+                        </p>
+                        <h3>Visión</h3>
+                        <p class="text-white">
+                            “Ser el aplicativo de ayuda respecto a estaciones de servicio, más recurrido del mercado
+                            peruano”
+                        </p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
 
 
-            <br><br><br><br>
-            <section class = "container-fluid">
+        <br><br><br><br>
+        <section class="container-In">
+            <div class="card">
                 <h2>Integrantes</h2>
-                <div class="card">
-                    <div class="row">
-                        <div class="col">
-                            <div class="row">
-                                <div class="col-4">
-                                    
-                                    <img class="img-thumbnail" src="imagenes/Miquel.jpg" width="200" height="200">
-                                </div>
-                                <div class="col">
-                                    <h3 class="h4">Nombre: Erwin Miquel De la Piedra Quintanilla</h3>
-                                    <h3 class="h4">Carrera: Ing. de Software</h3>
-                                    <p class="text-black">
-                                        Me encuentro cursando el 5to ciclo de mi carrera, me fascina el mundo del cine y jugar videojuegos. Me considero alguien 
-                                        comprometido y que le gusta tener planificado todo, con el fin de lograr cumplir correctamente con los trabajos.
-                                    </p>
-                                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-4">
+
+                                <img class="img-thumbnail" src="imagenes/Miquel.jpg" width="200" height="200">
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="row">
-                                <div class="col-4">
-                                    <img class="img-thumbnail" src="imagenes/Liam.jpg" width="200" height="200">
-                                </div>
-                                <div class="col">
-                                    <h3 class="h4">Nombre: Xiao Lian Li Zegarra</h3>
-                                    <h3 class="h4">Carrera: Ing. de Software</h3>
-                                    <p class="text-black">
-                                        Actualmente curso el 5to ciclo de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias 
-                                        Aplicadas (UPC). Me considero un chico comprometido, responsable y de mente ágil. Elegí esta carrera porque 
-                                        me interesa la programación y el desarrollo de programas o soluciones mediante esta.
-                                    </p>
-                                </div>
+                            <div class="col">
+                                <h3 class="h4">Nombre: Erwin Miquel De la Piedra Quintanilla</h3>
+                                <h3 class="h4">Carrera: Ing. de Software</h3>
+                                <p class="text-black">
+                                    Me encuentro cursando el 5to ciclo de mi carrera, me fascina el mundo del cine y
+                                    jugar videojuegos. Me considero alguien
+                                    comprometido y que le gusta tener planificado todo, con el fin de lograr cumplir
+                                    correctamente con los trabajos.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="row">
-                                <div class="col">
-                                    <img class="img-thumbnail" src="imagenes/Sebas.jpg" width="200" height="200">
-                                </div>
-                                <div class="col">
-                                    <h3 class="h4">Nombre: Sebastián Córdova Valdivia</h3>
-                                    <h3 class="h4">Carrera: Ing. de Software</h3>
-                                    <p class="text-black">
-                                        Estoy en el 5to ciclo de la carrera, me gusta jugar videojuegos, ver series, leer y tocar algún instrumento musical. 
-                                        Me gustaría especializarme en informática forense o ciberseguridad.
-                                    </p>
-                                </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-4">
+                                <img class="img-thumbnail" src="imagenes/Liam.jpg" width="200" height="200">
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="row">
-                                <div class="col">
-                                    <img class="img-thumbnail" src="imagenes/Marcelo.jpg" width="200" height="200">
-                                </div>
-                                <div class="col">
-                                    <h3 class="h4">Nombre: Chagray Barrera, Marcelo Enrique</h3>
-                                    <h3 class="h4">Carrera: Ing. de Sistemas</h3>
-                                    <p class="text-black">
-                                        Estoy cursando el sexto ciclo de la carrera, me gustaría enfocarme todo el tema de Base de datos y desarrollo de 
-                                        páginas web
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="row">
-                                <div class="col">
-                                    <img class="img-thumbnail" src="imagenes/Eduardo.jpg" width="200" height="200">
-                                </div>
-                                <div class="col">
-                                    <h3 class="h4">Nombre: Eduardo André Chero Emé</h3>
-                                    <h3 class="h4">Carrera: Ing. de Software</h3>
+                            <div class="col">
+                                <h3 class="h4">Nombre: Xiao Lian Li Zegarra</h3>
+                                <h3 class="h4">Carrera: Ing. de Software</h3>
                                 <p class="text-black">
-                                    Me gusta los videojuegos y las series, quiero especializarme en ciberseguridad para tener una ganancia estable 
+                                    Actualmente curso el 5to ciclo de la carrera de Ingeniería de Software en la
+                                    Universidad Peruana de Ciencias
+                                    Aplicadas (UPC). Me considero un chico comprometido, responsable y de mente ágil.
+                                    Elegí esta carrera porque
+                                    me interesa la programación y el desarrollo de programas o soluciones mediante esta.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <img class="img-thumbnail" src="imagenes/Sebas.jpg" width="200" height="200">
+                            </div>
+                            <div class="col">
+                                <h3 class="h4">Nombre: Sebastián Córdova Valdivia</h3>
+                                <h3 class="h4">Carrera: Ing. de Software</h3>
+                                <p class="text-black">
+                                    Estoy en el 5to ciclo de la carrera, me gusta jugar videojuegos, ver series, leer y
+                                    tocar algún instrumento musical.
+                                    Me gustaría especializarme en informática forense o ciberseguridad.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <img class="img-thumbnail" src="imagenes/Marcelo.jpg" width="200" height="200">
+                            </div>
+                            <div class="col">
+                                <h3 class="h4">Nombre: Chagray Barrera, Marcelo Enrique</h3>
+                                <h3 class="h4">Carrera: Ing. de Sistemas</h3>
+                                <p class="text-black">
+                                    Estoy cursando el sexto ciclo de la carrera, me gustaría enfocarme todo el tema de
+                                    Base de datos y desarrollo de
+                                    páginas web
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <img class="img-thumbnail" src="imagenes/Eduardo.jpg" width="200" height="200">
+                            </div>
+                            <div class="col">
+                                <h3 class="h4">Nombre: Eduardo André Chero Emé</h3>
+                                <h3 class="h4">Carrera: Ing. de Software</h3>
+                                <p class="text-black">
+                                    Me gusta los videojuegos y las series, quiero especializarme en ciberseguridad para
+                                    tener una ganancia estable
                                     mientras creo videojuegos aparte por pasión
                                 </p>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </section>
-    </body>
+    </section>
+</body>
+
 </html>
